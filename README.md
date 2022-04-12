@@ -1,6 +1,6 @@
 #### Run environment
-- docker-compose up -d --build
-- after command completed you will have running environment within php@8.1, nginx, mysql@8, phpmyadmin in your localhost 
+- `docker-compose up -d --build`
+- after command completed you will have running environment within php@8.1, nginx, mysql@8, phpmyadmin in your localhost
 
 #### Run container cli
 - php: `docker-compose php exec /bin/bash`
