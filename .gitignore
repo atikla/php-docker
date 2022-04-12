@@ -1,0 +1,4 @@
+/.env
+/docker/data/*
+/.idea/*
+.DS_Store
