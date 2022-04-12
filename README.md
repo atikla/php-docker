@@ -1,5 +1,5 @@
 #### Run environment
-- docker-compose up -d --build
+- `docker-compose up -d --build`
 
 #### Run container cli
 - php: `docker-compose php exec /bin/bash`
