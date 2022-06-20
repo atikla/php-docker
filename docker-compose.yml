@@ -32,6 +32,7 @@ services:
       context: './docker/php-fpm'
     volumes:
       - './:/var/www/site'
+      - './docker/php-fpm/xdebug/xdebug-default.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini'
     depends_on:
       - mysql
   nginx:
@@ -39,7 +40,7 @@ services:
     build:
       context: './docker/nginx'
     ports:
-      - '${NGINX_PHPMYADMIN_PORT-10002}:80'
+      - '${FORWARD_NGINX_PORT-10002}:80'
     volumes:
       - './:/var/www/site'
       - './docker/nginx/default.conf:/etc/nginx/conf.d/default.conf'
